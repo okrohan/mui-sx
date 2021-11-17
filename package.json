@@ -1,0 +1,32 @@
+{
+  "name": "sx-compose",
+  "version": "1.0.0",
+  "description": "Tiny utilty to help compose MUI sxProps",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okrohan/sx-compose.git"
+  },
+  "keywords": [
+    "mui",
+    "sx",
+    "sx-compose",
+    "compose",
+    "compose",
+    "sx",
+    "compose-sx"
+  ],
+  "author": "okrohan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okrohan/sx-compose/issues"
+  },
+  "homepage": "https://github.com/okrohan/sx-compose#readme",
+  "devDependencies": {
+    "tsc": "^2.0.3",
+    "typescript": "^4.4.4"
+  }
+}
