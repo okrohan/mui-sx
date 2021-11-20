@@ -1,5 +1,5 @@
 {
-  "name": "sx-compose",
+  "name": "mui-sx",
   "version": "0.0.1",
   "description": "Tiny utilty to help compose MUI sxProps",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okrohan/sx-compose.git"
+    "url": "git+https://github.com/okrohan/mui-sx.git"
   },
   "keywords": [
     "mui",
@@ -25,9 +25,9 @@
   "author": "okrohan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/okrohan/sx-compose/issues"
+    "url": "https://github.com/okrohan/mui-sx/issues"
   },
-  "homepage": "https://github.com/okrohan/sx-compose#readme",
+  "homepage": "https://github.com/okrohan/mui-sx#readme",
   "devDependencies": {
     "@mui/system": "^5.1.1",
     "tsc": "^2.0.3",
