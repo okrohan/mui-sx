@@ -1,7 +1,7 @@
 {
   "name": "mui-sx",
-  "version": "0.0.1",
-  "description": "Tiny utilty to help compose MUI sxProps",
+  "version": "1.0.0",
+  "description": "A simple utility for conditionally joining material ui sx props together.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": ["/lib"],
@@ -16,9 +16,10 @@
   "keywords": [
     "mui",
     "sx",
+    "mui-sx",
     "sx-compose",
     "compose",
-    "compose",
+    "compose sx",
     "sx",
     "compose-sx"
   ],
