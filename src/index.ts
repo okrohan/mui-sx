@@ -1,21 +1,18 @@
 import { SxProps, Theme } from "@mui/system";
 
-type ISxPropsType = SxProps<Theme>;
-
-interface ICombineMuiSx {
-  condition: boolean;
-  sx: ISxPropsType;
+interface ICombineMuiSx<T extends Theme> {
+  condition: boolean
+  sx: SxProps<T>
 }
 
-const sxCompose = (
-    ...sx: Array<ICombineMuiSx | ISxPropsType>
-  ): ISxPropsType => {
-    return sx.reduce((acc: ISxPropsType, curr: ICombineMuiSx | ISxPropsType) => {
-      if ((curr as ICombineMuiSx).condition) {
-        return { ...acc, ...(curr as ICombineMuiSx).sx } as ISxPropsType;
-      }
-      return { ...acc, ...(curr as ISxPropsType) } as ISxPropsType;
-    }, {} as ISxPropsType);
-  };
+
+const sxCompose = <T extends Theme>(...sx: Array<ICombineMuiSx<T> | SxProps<T>>): SxProps<T> => {
+  return sx.reduce((acc: SxProps<T>, curr: ICombineMuiSx<T> | SxProps<T>) => {
+    if ((curr as ICombineMuiSx<T>).condition) {
+      return { ...acc, ...(curr as ICombineMuiSx<T>).sx } as SxProps
+    }
+    return { ...acc, ...(curr as SxProps<T>) } as SxProps
+  }, {} as SxProps)
+}
 
 export default sxCompose
